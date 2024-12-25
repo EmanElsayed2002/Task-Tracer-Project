@@ -1,0 +1,15 @@
+C:\Users\CONNECT\Desktop\OOP Projects\Task-Tracer-Project\Task Tracer Project\Task Tracer Project\bin\Debug\net8.0\Task Tracer Project.exe
+C:\Users\CONNECT\Desktop\OOP Projects\Task-Tracer-Project\Task Tracer Project\Task Tracer Project\bin\Debug\net8.0\Task Tracer Project.deps.json
+C:\Users\CONNECT\Desktop\OOP Projects\Task-Tracer-Project\Task Tracer Project\Task Tracer Project\bin\Debug\net8.0\Task Tracer Project.runtimeconfig.json
+C:\Users\CONNECT\Desktop\OOP Projects\Task-Tracer-Project\Task Tracer Project\Task Tracer Project\bin\Debug\net8.0\Task Tracer Project.dll
+C:\Users\CONNECT\Desktop\OOP Projects\Task-Tracer-Project\Task Tracer Project\Task Tracer Project\bin\Debug\net8.0\Task Tracer Project.pdb
+C:\Users\CONNECT\Desktop\OOP Projects\Task-Tracer-Project\Task Tracer Project\Task Tracer Project\obj\Debug\net8.0\Task Tracer Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CONNECT\Desktop\OOP Projects\Task-Tracer-Project\Task Tracer Project\Task Tracer Project\obj\Debug\net8.0\Task Tracer Project.AssemblyInfoInputs.cache
+C:\Users\CONNECT\Desktop\OOP Projects\Task-Tracer-Project\Task Tracer Project\Task Tracer Project\obj\Debug\net8.0\Task Tracer Project.AssemblyInfo.cs
+C:\Users\CONNECT\Desktop\OOP Projects\Task-Tracer-Project\Task Tracer Project\Task Tracer Project\obj\Debug\net8.0\Task Tracer Project.csproj.CoreCompileInputs.cache
+C:\Users\CONNECT\Desktop\OOP Projects\Task-Tracer-Project\Task Tracer Project\Task Tracer Project\obj\Debug\net8.0\Task Tracer Project.sourcelink.json
+C:\Users\CONNECT\Desktop\OOP Projects\Task-Tracer-Project\Task Tracer Project\Task Tracer Project\obj\Debug\net8.0\Task Tracer Project.dll
+C:\Users\CONNECT\Desktop\OOP Projects\Task-Tracer-Project\Task Tracer Project\Task Tracer Project\obj\Debug\net8.0\refint\Task Tracer Project.dll
+C:\Users\CONNECT\Desktop\OOP Projects\Task-Tracer-Project\Task Tracer Project\Task Tracer Project\obj\Debug\net8.0\Task Tracer Project.pdb
+C:\Users\CONNECT\Desktop\OOP Projects\Task-Tracer-Project\Task Tracer Project\Task Tracer Project\obj\Debug\net8.0\Task Tracer Project.genruntimeconfig.cache
+C:\Users\CONNECT\Desktop\OOP Projects\Task-Tracer-Project\Task Tracer Project\Task Tracer Project\obj\Debug\net8.0\ref\Task Tracer Project.dll
