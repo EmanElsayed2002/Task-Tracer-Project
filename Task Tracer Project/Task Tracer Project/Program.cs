@@ -10,34 +10,45 @@ namespace Task_Tracer_Project
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to my task tracer");
-            Console.WriteLine("1. Add task\n2. View All Tasks\n3. Mark task Completed\n4. Remove Task\n5. Exit");
-            Console.Write("Enter Your Choice: ");
-            int userChoice = int.Parse(Console.ReadLine());
-            switch (userChoice)
+            char userRepeat = 'y';
+            do
             {
-                case 1:
-                    addTask();
-                    break;
-                case 2:
-                    viewAllTasks();
-                    break;
-                case 3:
-                    Console.WriteLine("Enter Task TiTle that you Completed :)");
-                    Task task = new Task();
-                    task.taskTitle = Console.ReadLine();
-                    markTaskCompleted(task);
-                    break;
-                case 4:
-                    Console.WriteLine("Enter Task TiTle that you Need to Remove :)");
-                    Task taskRemoved = new Task();
-                    taskRemoved.taskTitle = Console.ReadLine();
-                    removeTask(taskRemoved);
-                    break;
-                default:
-                    Environment.Exit(0);
-                    break;
+                Console.WriteLine("1. Add task\n2. View All Tasks\n3. Mark task Completed\n4. Remove Task\n5. Exit");
+                Console.Write("Enter Your Choice: ");
+                int userChoice = -1;
+                do
+                {
+                    userChoice = int.Parse(Console.ReadLine());
+                } while (userChoice >= 1 && userChoice <= 5);
+                switch (userChoice)
+                {
+                    case 1:
+                        addTask();
+                        break;
+                    case 2:
+                        viewAllTasks();
+                        break;
+                    case 3:
+                        Task task = new Task();
+                        Console.Write("Enter Task TiTle that you Completed :)");
+                        task.taskTitle = Console.ReadLine();
+                        markTaskCompleted(task);
+                        break;
+                    case 4:
+                        Task taskRemoved = new Task();
+                        Console.WriteLine("Enter Task TiTle that you Need to Remove :)");
+                        taskRemoved.taskTitle = Console.ReadLine();
+                        removeTask(taskRemoved);
+                        break;
+                    default:
+                        Console.WriteLine("Thanks. GoodBye!!");
+                        Environment.Exit(0);
+                        break;
 
-            }
+                }
+                Console.Write("Do You Want Another Process(Y/N): ");
+                userRepeat = Char.ToLower(Char.Parse(Console.ReadLine()));
+            } while (userRepeat == 'y');
         }
 
         static void addTask()
@@ -45,15 +56,15 @@ namespace Task_Tracer_Project
             Task newTask = new Task();
             Console.Write("Enter Task Title: ");
             newTask.taskTitle = Console.ReadLine();
-            Console.Write("Enter Task Status:\n1. Completed\n2.Pending\n3.Failed\n");
-            if (Enum.TryParse(Console.ReadLine(), out int enumChoice) && enumChoice >= 1 && enumChoice <= 3)
+            Console.Write("Enter Task Status:\n1.Completed\n2.Pending\n3.Failed\n");
+            if (Enum.TryParse<TaskStatus>(Console.ReadLine(), out var enumChoice))
             {
-                newTask.Task_status = (TaskStatus)enumChoice;
+                newTask.Task_status = (TaskStatus)(enumChoice);
                 Task[] newTasks = new Task[tasks.Length + 1];
                 tasks.CopyTo(newTasks, 0);
                 newTasks[^1] = newTask;
                 tasks = newTasks;
-                Console.WriteLine("Thanks For Entering Task Details: Keep Going :)");
+                Console.WriteLine("-----------------------------------------");
             }
             else
             {

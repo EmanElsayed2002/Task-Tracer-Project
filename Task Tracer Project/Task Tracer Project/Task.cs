@@ -8,7 +8,7 @@ namespace Task_Tracer_Project
 {
     public enum TaskStatus
     {
-        Completed,
+        Completed = 1,
         Pending,
         Failed
     }
